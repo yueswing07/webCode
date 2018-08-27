@@ -1,0 +1,145 @@
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none;     
+  }
+
+  body,
+  input,
+  select,
+  button,
+  textarea {
+    font-size: 14px;
+    font-family: 'Microsoft YaHei', Tahoma, Geneva, sans-serif;
+  }
+
+  button {
+    border-width: 0px;
+    outline: none;
+  }
+
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+  }
+
+  iframe {
+    display: block;
+  }
+
+
+  .btnStyle {
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #49a9ee;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .btnStyle:disabled {
+    cursor:not-allowed;
+    opacity:0.5;
+  }
+
+  .btnStyle:active {
+    opacity: 0.8;
+  }
+
+  .container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  .chessboardContainer {
+    width:720px;
+    height:720px;
+    position: relative;
+    background:#D5BA9D;
+    outline:solid 1px black;     
+  }
+ 
+  .chessboardAppearance {
+    background:#D5BA9D;
+    width:640px;
+    height:640px;
+    background-image:
+      linear-gradient(270deg, black 1px,transparent 0),
+      linear-gradient(360deg, black 1px,transparent 0),
+      linear-gradient(black 1px,transparent 0),
+      linear-gradient(90deg,black 1px,transparent 0);
+    background-size:40px 40px;
+    outline:solid 1px black;   
+    position: absolute;
+    top:40px;
+    left:40px;  
+  }
+
+  .chessboard {
+    width:700px;
+    height:700px;
+    font-size: 0;
+    position:absolute;
+    top:20px;
+    left:20px;
+    z-index: 1000;
+  }
+
+  .chessGrid {
+    width:40px;
+    height:40px;
+    display: inline-block;
+    
+  }
+
+  .white {
+    background: white;
+    border-radius: 50%;
+  }
+
+  .black {
+    background: black;
+    border-radius: 50%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .chessboradCanvas {
+    background:#D5BA9D;
+    width:720px;
+    height:720px;
+    outline:solid 1px black;  
+  }
+
+  .labelContent {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: solid 1px #000;
+    flex-direction: column; 
+    background: gray; 
+  }
+
+  .labelWhite {
+    color:white;
+  }
+
+  .labelBlack {
+    color:black;
+  }
